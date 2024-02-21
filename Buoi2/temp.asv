@@ -1,0 +1,7 @@
+[n,d] = delta_signal(0,-3,4);
+subplot(2,2,1);
+plot()
+
+[n,d] = shift_signal(n,d,2);
+subplot(2,2,3);
+plot(n);

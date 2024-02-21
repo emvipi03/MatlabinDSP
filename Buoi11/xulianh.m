@@ -1,0 +1,10 @@
+img = imread('duck_shift.png');
+img = rgb2gray(img);
+Y = fft2(img);
+magnitude = log(1+abs(fftshift((Y))));
+bw = [0 0 0; 1 1 1];
+colormap(bw);
+subplot(1,2,1);
+imagesc(img);
+subplot(1,2,2);
+imagesc(magnitude);
